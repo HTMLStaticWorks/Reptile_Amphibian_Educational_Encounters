@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Scales & Skin</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <style>
+        .coming-soon-page {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/coming-soon-bg.jpg') center/cover;
+            color: white;
+        }
+        .countdown-item {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="coming-soon-page">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Something Wild is Coming</h1>
+            <p class="lead mb-5">We're working hard to bring you the best reptile education platform. Stay tuned!</p>
+            
+            <div class="d-flex gap-3 justify-content-center mb-5">
+                <div class="countdown-item">
+                    <div class="h2 fw-bold mb-0">15</div>
+                    <small class="text-uppercase">Days</small>
+                </div>
+                <div class="countdown-item">
+                    <div class="h2 fw-bold mb-0">10</div>
+                    <small class="text-uppercase">Hours</small>
+                </div>
+                <div class="countdown-item">
+                    <div class="h2 fw-bold mb-0">45</div>
+                    <small class="text-uppercase">Mins</small>
+                </div>
+                <div class="countdown-item">
+                    <div class="h2 fw-bold mb-0">30</div>
+                    <small class="text-uppercase">Secs</small>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="input-group mb-3 needs-validation" novalidate>
+                        <input type="email" class="form-control p-3 bg-transparent text-white border-white" placeholder="Enter your email" required>
+                        <button class="btn btn-primary px-4" type="submit">Notify Me</button>
+                    </form>
+                    <p class="small text-white-50">Join our mailing list to be the first to know when we launch.</p>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <a href="#" class="text-white fs-4 mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4 mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4 mx-2"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

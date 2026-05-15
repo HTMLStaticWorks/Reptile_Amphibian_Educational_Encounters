@@ -1,0 +1,229 @@
+:root {
+    /* Color Palette */
+    --primary-color: #4A5D23; /* Moss Green */
+    --secondary-color: #808000; /* Olive */
+    --accent-color: #00CED1; /* Aqua */
+    --text-color: #333333;
+    --text-light: #666666;
+    --bg-body: #ffffff;
+    --bg-card: #ffffff;
+    --bg-light: #f8f9fa;
+    --white: #ffffff; /* For elements that should always be white */
+    --transition: all 0.3s ease-in-out;
+    --border-radius: 12px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
+    /* Typography */
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-body);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Navbar */
+.navbar {
+    transition: var(--transition);
+    padding: 0.5rem 0;
+    background: var(--bg-body) !important;
+    box-shadow: var(--shadow);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+footer .navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--text-color) !important;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: var(--transition);
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg') center/cover;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-width: 2px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    background-color: var(--bg-card);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #f8f9fa; /* Lighter white for better base contrast */
+    padding: 80px 0 20px;
+}
+
+footer h5 {
+    color: var(--white);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+footer p {
+    color: #cccccc; /* Improved readability for paragraphs */
+}
+
+footer .text-muted {
+    color: #bbbbbb !important; /* Force higher contrast for muted text in footer */
+}
+
+footer a.text-muted:hover {
+    color: var(--accent-color) !important;
+}
+
+footer .list-unstyled li a {
+    color: #bbbbbb;
+    transition: var(--transition);
+}
+
+footer .list-unstyled li a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+footer .social-links a,
+footer .d-flex.gap-3 a {
+    color: var(--white) !important;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+footer .social-links a:hover,
+footer .d-flex.gap-3 a:hover {
+    color: var(--accent-color) !important;
+    transform: translateY(-3px);
+}
+
+/* Back to Top */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Overrides */
+@media (max-width: 1100px) {
+    .desktop-nav {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1101px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+}

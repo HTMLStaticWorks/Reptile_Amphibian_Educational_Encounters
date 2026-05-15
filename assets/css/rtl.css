@@ -1,0 +1,28 @@
+[dir="rtl"] body {
+    text-align: right;
+}
+
+[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .navbar-brand {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+[dir="rtl"] #backToTop {
+    right: auto;
+    left: 30px;
+}
+
+[dir="rtl"] .nav-link:after {
+    left: auto;
+    right: 0;
+}

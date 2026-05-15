@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Programs | Scales & Skin</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <style>
+        .page-header {
+            padding: 150px 0 100px;
+            background: linear-gradient(rgba(74, 93, 35, 0.9), rgba(74, 93, 35, 0.9)), url('assets/images/services-hero.jpg') center/cover;
+            color: white;
+            text-align: center;
+        }
+        .service-card {
+            border: none;
+            transition: var(--transition);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            font-size: 2rem;
+            transition: var(--transition);
+        }
+        .service-card:hover .service-icon {
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Same as index) -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="Scales & Skin Logo">
+                </a>
+                
+                <div class="d-flex align-items-center order-lg-last ms-2">
+                    <button class="btn btn-outline-primary ms-2 px-2" id="themeToggle">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-outline-primary ms-2 px-3 fw-bold" id="rtlToggle">RTL</button>
+                    <a href="login.html" class="btn btn-primary ms-3 d-none d-lg-block">Login</a>
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse desktop-nav" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="display-3 fw-bold">Educational Programs</h1>
+                <p class="lead">Tailored experiences for every audience and occasion.</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100 p-4 shadow-sm">
+                            <div class="service-icon"><i class="bi bi-book"></i></div>
+                            <h3>School Assemblies</h3>
+                            <p>Dynamic 45-60 minute presentations covering adaptation, habitat, and conservation.</p>
+                            <ul class="list-unstyled mb-4 text-muted">
+                                <li><i class="bi bi-check2 text-primary me-2"></i> STEM Aligned</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Hands-on Interaction</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Q&A Session</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100 p-4 shadow-sm">
+                            <div class="service-icon"><i class="bi bi-balloon"></i></div>
+                            <h3>Birthday Parties</h3>
+                            <p>Private shows designed to entertain and educate in the comfort of your home or venue.</p>
+                            <ul class="list-unstyled mb-4 text-muted">
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Personalized Experience</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> 10+ Animals</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Photo Opportunities</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100 p-4 shadow-sm">
+                            <div class="service-icon"><i class="bi bi-people"></i></div>
+                            <h3>Corporate Events</h3>
+                            <p>Unique team-building experiences and educational displays for corporate functions.</p>
+                            <ul class="list-unstyled mb-4 text-muted">
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Ice-breaking Activities</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Interactive Displays</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Custom Scheduling</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100 p-4 shadow-sm">
+                            <div class="service-icon"><i class="bi bi-camera"></i></div>
+                            <h3>Photography Sessions</h3>
+                            <p>Professional animal handling for photographers and film production sets.</p>
+                            <ul class="list-unstyled mb-4 text-muted">
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Expert Handling</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Health & Safety First</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Rare Species Available</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100 p-4 shadow-sm">
+                            <div class="service-icon"><i class="bi bi-tree"></i></div>
+                            <h3>Summer Camps</h3>
+                            <p>Multi-day programs focused on nature exploration and wildlife conservation.</p>
+                            <ul class="list-unstyled mb-4 text-muted">
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Outdoor Learning</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Conservation Projects</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Junior Ranger Badges</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100 p-4 shadow-sm">
+                            <div class="service-icon"><i class="bi bi-heart"></i></div>
+                            <h3>Therapeutic Visits</h3>
+                            <p>Calm and gentle encounters designed for hospitals and specialized care facilities.</p>
+                            <ul class="list-unstyled mb-4 text-muted">
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Specially Trained Animals</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Stress Reduction</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i> Sensitive Handling</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index) -->
+    <footer class="footer mt-auto py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3" href="#">
+                        <img src="assets/images/logo.png" alt="Scales & Skin Logo">
+                    </a>
+                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical, and unforgettable encounters for all ages.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-muted">About Us</a></li>
+                        <li><a href="services.html" class="text-muted">Programs</a></li>
+                        <li><a href="gallery.html" class="text-muted">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="service-details.html" class="text-muted">School Programs</a></li>
+                        <li><a href="service-details.html" class="text-muted">Birthday Parties</a></li>
+                        <li><a href="service-details.html" class="text-muted">Safety Guidelines</a></li>
+                        <li><a href="booking.html" class="text-muted">Online Booking</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-muted">Stay updated with our latest news and events.</p>
+                    <form class="input-group mb-3 needs-validation" novalidate>
+                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email Address" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-muted">&copy; 2026 Scales & Skin. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-muted">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop"><i class="bi bi-arrow-up"></i></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

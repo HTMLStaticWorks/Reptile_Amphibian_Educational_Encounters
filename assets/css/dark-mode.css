@@ -1,0 +1,106 @@
+[data-bs-theme="dark"] {
+    --text-color: #e0e0e0;
+    --text-light: #aaaaaa;
+    --bg-body: #121212;
+    --bg-card: #1e1e1e;
+    --bg-light: #1a1a1a;
+    --primary-color: #a3c16a; /* Lighter, more vibrant moss for dark mode visibility */
+    --accent-color: #00ffff; /* Brighter aqua */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color-scheme: dark;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+[data-bs-theme="dark"] h1, 
+[data-bs-theme="dark"] h2, 
+[data-bs-theme="dark"] h3, 
+[data-bs-theme="dark"] h4, 
+[data-bs-theme="dark"] h5, 
+[data-bs-theme="dark"] h6 {
+    color: var(--primary-color);
+}
+
+[data-bs-theme="dark"] .navbar {
+    background: var(--bg-body) !important;
+    border-bottom: 1px solid #333;
+}
+
+[data-bs-theme="dark"] .card {
+    background: var(--bg-card);
+    box-shadow: var(--shadow);
+}
+
+[data-bs-theme="dark"] .nav-link {
+    color: var(--text-color) !important;
+}
+
+[data-bs-theme="dark"] .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: var(--text-light) !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+[data-bs-theme="dark"] .form-control {
+    background-color: #2c2c2c;
+    border-color: #444;
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+    background-color: #333;
+    border-color: var(--accent-color);
+}
+
+/* Ensure buttons remain visible and have high contrast */
+[data-bs-theme="dark"] .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #000 !important; /* Dark text on light green bg for contrast */
+}
+
+[data-bs-theme="dark"] .btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000 !important;
+}
+
+[data-bs-theme="dark"] .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+[data-bs-theme="dark"] .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: #000; 
+}
+
+/* Invert text-dark if it's likely on a dark background */
+[data-bs-theme="dark"] .bg-body .text-dark,
+[data-bs-theme="dark"] .bg-light .text-dark,
+[data-bs-theme="dark"] .card .text-dark {
+    color: var(--text-color) !important;
+}
+
+/* Ensure text-white stays visible */
+[data-bs-theme="dark"] .text-white {
+    color: #ffffff !important;
+}
+
+/* Footer high contrast in dark mode */
+[data-bs-theme="dark"] footer .text-muted {
+    color: #bbbbbb !important;
+}
+
+[data-bs-theme="dark"] footer a.text-muted:hover {
+    color: var(--accent-color) !important;
+}
