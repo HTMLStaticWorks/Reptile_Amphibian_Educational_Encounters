@@ -1061,3 +1061,70 @@ footer .d-flex.gap-3 a:hover {
 .mb-4 {
     margin-bottom: 2rem !important;
 }
+
+/* =========================================
+   MOBILE FIXES
+========================================= */
+@media (max-width: 767px) {
+
+    /* HERO BUTTONS STACK VERTICALLY */
+    .hero .d-flex.gap-3,
+    .hero-v2 .d-flex.gap-3 {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .hero .d-flex.gap-3 .btn,
+    .hero-v2 .d-flex.gap-3 .btn {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    /* OUR MISSION FLOATING CARD VISIBLE ON MOBILE */
+    .mission-profit-card {
+        display: block !important;
+        position: absolute !important;
+        bottom: 15px !important;
+        left: 15px !important;
+        right: 15px !important;
+        margin: 0 !important;
+        padding: 16px !important;
+        border-radius: 20px !important;
+        background: rgba(255, 255, 255, 0.92) !important;
+        backdrop-filter: blur(10px);
+        z-index: 5;
+        text-align: center;
+    }
+
+    .mission-profit-card h3 {
+        font-size: 1.4rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    .mission-profit-card p {
+        font-size: 0.95rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* IMAGE CONTAINER */
+    .mission-image-wrapper {
+        position: relative;
+    }
+
+    .mission-image-wrapper img {
+        min-height: 420px;
+        object-fit: cover;
+    }
+}
+
+/* BLOG CARD FIX */
+.blog-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog-card .btn-link {
+    margin-top: auto;
+}
