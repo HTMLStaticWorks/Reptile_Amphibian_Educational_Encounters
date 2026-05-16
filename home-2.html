@@ -38,6 +38,8 @@
             font-size: 1.8rem;
             color: var(--primary-color);
             margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
             transition: var(--transition);
         }
 
@@ -94,7 +96,7 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                <li class="nav-item"><a class="nav-link active" href="home-2.html">Special</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
@@ -110,10 +112,10 @@
         <section class="hero-v2">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 reveal">
+                    <div class="col-lg-6 reveal mb-5 mb-lg-0">
                         <img src="assets/images/monitor.png" alt="Monitor Lizard" class="img-fluid floating-img">
                     </div>
-                    <div class="col-lg-6 reveal">
+                    <div class="col-lg-6 reveal mb-5 mb-lg-0">
                         <h6 class="text-uppercase fw-bold text-white mb-3">Welcome to Scales & Skin</h6>
                         <h1 class="display-3 fw-bold mb-4">Discover the Secret World of Reptiles</h1>
                         <p class="lead mb-5">Join us for an immersive educational journey where science meets adventure.
@@ -131,7 +133,7 @@
         <!-- Features Section -->
         <section class="py-5">
             <div class="container py-5">
-                <div class="row g-4">
+                <div class="row g-4 text-center">
                     <div class="col-md-4 feature-item">
                         <div class="icon-box"><i class="bi bi-shield-fill-check"></i></div>
                         <h4>Expert Handlers</h4>
@@ -178,12 +180,14 @@
                             <div class="col-6">
                                 <img src="assets/images/gecko.png" alt="Leopard Gecko"
                                     class="img-fluid rounded-4 shadow-sm mb-3">
-                                <img src="assets/images/monitor.png" alt="Monitor Lizard" class="img-fluid rounded-4 shadow-sm">
+                                <img src="assets/images/monitor.png" alt="Monitor Lizard"
+                                    class="img-fluid rounded-4 shadow-sm">
                             </div>
                             <div class="col-6 pt-5">
                                 <img src="assets/images/python.png" alt="Burmese Python"
                                     class="img-fluid rounded-4 shadow-sm mb-3">
-                                <img src="assets/images/tortoise.png" alt="Sulcata Tortoise" class="img-fluid rounded-4 shadow-sm">
+                                <img src="assets/images/tortoise.png" alt="Sulcata Tortoise"
+                                    class="img-fluid rounded-4 shadow-sm">
                             </div>
                         </div>
                     </div>
@@ -225,10 +229,10 @@
                     <div class="col-lg-6">
                         <div class="position-relative">
                             <img src="assets/images/gecko.png" alt="Conservation" class="img-fluid rounded-4 shadow-lg">
-                            <div
-                                class="position-absolute bottom-0 start-0 bg-accent text-dark p-4 rounded-end-4 mb-4 d-none d-sm-block">
-                                <h4 class="mb-0 fw-bold">10% of Profits</h4>
-                                <p class="mb-0">Donated to Conservation</p>
+                            <div class="position-absolute bottom-0 start-0 m-4 p-4 rounded-4 shadow-lg d-none d-sm-block"
+                                style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                                <h3 class="mb-0 fw-bold text-primary">10% of Profits</h3>
+                                <p class="mb-0 text-dark fw-medium">Donated to Conservation</p>
                             </div>
                         </div>
                     </div>
@@ -245,56 +249,60 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card border-0 shadow-sm text-center p-4">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Dr. Alan Grant" class="rounded-circle mx-auto mb-4"
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 d-flex flex-column">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                                alt="Dr. Alan Grant" class="rounded-circle mx-auto mb-4"
                                 style="width: 150px; height: 150px; object-fit: cover;">
                             <h4>Dr. Alan Grant</h4>
-                            <p class="text-primary fw-bold">Lead Herpetologist</p>
+                            <p class="text-primary fw-bold">The Lead Herpetologist</p>
                             <p class="small text-muted">20+ years of experience in reptile behavior and conservation.
                             </p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-twitter-x"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card border-0 shadow-sm text-center p-4">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Sarah Harding" class="rounded-circle mx-auto mb-4"
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 d-flex flex-column">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
+                                alt="Sarah Harding" class="rounded-circle mx-auto mb-4"
                                 style="width: 150px; height: 150px; object-fit: cover;">
                             <h4>Sarah Harding</h4>
-                            <p class="text-primary fw-bold">Senior Educator</p>
+                            <p class="text-primary fw-bold">Best As Senior Educator</p>
                             <p class="small text-muted">Specializes in curriculum development and classroom engagement.
                             </p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card border-0 shadow-sm text-center p-4">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Nick Van Owen" class="rounded-circle mx-auto mb-4"
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 d-flex flex-column">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+                                alt="Nick Van Owen" class="rounded-circle mx-auto mb-4"
                                 style="width: 150px; height: 150px; object-fit: cover;">
                             <h4>Nick Van Owen</h4>
                             <p class="text-primary fw-bold">Wildlife Photographer</p>
                             <p class="small text-muted">Capturing the beauty of our ambassadors for educational
                                 materials.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-facebook"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card border-0 shadow-sm text-center p-4">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="Kelly Curtis" class="rounded-circle mx-auto mb-4"
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 d-flex flex-column">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop"
+                                alt="Kelly Curtis" class="rounded-circle mx-auto mb-4"
                                 style="width: 150px; height: 150px; object-fit: cover;">
                             <h4>Kelly Curtis</h4>
                             <p class="text-primary fw-bold">Animal Care Specialist</p>
                             <p class="small text-muted">Ensuring our ambassadors receive the best nutritional and health
                                 care.</p>
-                            <div class="d-flex justify-content-center gap-2">
+                            <div class="d-flex justify-content-center gap-2 mt-auto">
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
                                 <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-twitter-x"></i></a>
                             </div>

@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature Blog | Scales & Skin</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
     <style>
         .page-header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/snake12.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/snake12.jpg');
         }
+
         .blog-card img {
             height: 250px;
             object-fit: cover;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header (Same as index) -->
@@ -38,14 +43,15 @@
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="assets/images/logo.png" alt="Scales & Skin Logo">
                 </a>
-                
+
                 <div class="d-flex align-items-center order-lg-last ms-2">
                     <button class="btn btn-outline-primary ms-2 px-2" id="themeToggle">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                     <button class="btn btn-outline-primary ms-2 px-3 fw-bold" id="rtlToggle">RTL</button>
                     <a href="login.html" class="btn btn-primary ms-3 d-none d-lg-block">Login</a>
-                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -78,7 +84,7 @@
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                 <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
             </ul>
@@ -89,10 +95,11 @@
         <section class="page-header">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-5 reveal">
-                        <img src="assets/images/platipus.jfif" alt="Nature News" class="img-fluid floating-img" style="max-height: 300px;">
+                    <div class="col-lg-5 reveal mb-5 mb-lg-0">
+                        <img src="assets/images/platipus.jfif" alt="Nature News" class="img-fluid floating-img"
+                            style="max-height: 300px;">
                     </div>
-                    <div class="col-lg-7 reveal">
+                    <div class="col-lg-7 reveal mb-5 mb-lg-0">
                         <h1 class="display-4 fw-bold">Nature News & Insights</h1>
                         <p class="lead">Exploring the fascinating world of herpetology.</p>
                     </div>
@@ -106,16 +113,20 @@
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <img src="assets/images/gallery-1.png" alt="Featured Post" class="img-fluid rounded-4 shadow-lg">
-                            <span class="position-absolute top-0 start-0 m-4 badge bg-accent text-dark p-2 px-3 fw-bold">FEATURED</span>
+                            <img src="assets/images/gallery-1.png" alt="Featured Post"
+                                class="img-fluid rounded-4 shadow-lg">
+                            <span
+                                class="position-absolute top-0 start-0 m-4 badge bg-accent text-dark p-2 px-3 fw-bold">FEATURED</span>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <h6 class="text-uppercase fw-bold text-secondary mb-3">Editor's Choice</h6>
                         <h2 class="display-4 fw-bold mb-4">The Secret Language of Reptiles</h2>
-                        <p class="lead mb-4">Discover how lizards, snakes, and turtles communicate through subtle body language, color changes, and chemical signals.</p>
+                        <p class="lead mb-4">Discover how lizards, snakes, and turtles communicate through subtle body
+                            language, color changes, and chemical signals.</p>
                         <div class="d-flex align-items-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Author" class="rounded-circle me-3" width="50" height="50">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                                alt="Author" class="rounded-circle me-3" width="50" height="50">
                             <div>
                                 <h6 class="mb-0 fw-bold">Dr. Alan Grant</h6>
                                 <small class="text-muted">Lead Herpetologist • 10 min read</small>
@@ -135,7 +146,7 @@
                             <input type="text" class="form-control p-3 border-0" placeholder="Search articles...">
                             <button class="btn btn-primary px-4 border-0"><i class="bi bi-search"></i></button>
                         </div>
-                        
+
                         <div class="row g-4">
                             <div class="col-md-12">
                                 <div class="card blog-card border-0 shadow-sm overflow-hidden mb-4">
@@ -146,8 +157,11 @@
                                             <span><i class="bi bi-person me-2"></i> Dr. Scales</span>
                                         </div>
                                         <h2 class="fw-bold mb-3">Understanding Reptile Adaptations</h2>
-                                        <p>From camouflage to specialized limbs, reptiles have evolved incredible ways to survive in diverse environments. In this article, we dive deep into the science of adaptation...</p>
-                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold text-primary">Read More <i class="bi bi-arrow-right ms-2"></i></a>
+                                        <p>From camouflage to specialized limbs, reptiles have evolved incredible ways
+                                            to survive in diverse environments. In this article, we dive deep into the
+                                            science of adaptation...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold text-primary">Read
+                                            More <i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -159,8 +173,10 @@
                                             <span class="me-3"><i class="bi bi-calendar3 me-2"></i> May 10, 2026</span>
                                         </div>
                                         <h4 class="fw-bold mb-3">Top 5 Myths About Snakes</h4>
-                                        <p>Snake myths are common, but many of them are far from the truth. Let's debunk the most common misconceptions...</p>
-                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold text-primary">Read More</a>
+                                        <p>Snake myths are common, but many of them are far from the truth. Let's debunk
+                                            the most common misconceptions...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold text-primary">Read
+                                            More</a>
                                     </div>
                                 </div>
                             </div>
@@ -172,8 +188,10 @@
                                             <span class="me-3"><i class="bi bi-calendar3 me-2"></i> May 5, 2026</span>
                                         </div>
                                         <h4 class="fw-bold mb-3">Creating a Wildlife-Friendly Backyard</h4>
-                                        <p>Learn how you can attract and support local amphibian and reptile populations in your own garden...</p>
-                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold text-primary">Read More</a>
+                                        <p>Learn how you can attract and support local amphibian and reptile populations
+                                            in your own garden...</p>
+                                        <a href="blog-details.html" class="btn btn-link p-0 fw-bold text-primary">Read
+                                            More</a>
                                     </div>
                                 </div>
                             </div>
@@ -192,29 +210,42 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="card p-4 border-0 shadow-sm mb-4">
+                        <div class="card p-4 border-0 shadow-sm mb-4 sidebar-card">
                             <h5 class="fw-bold mb-3">Categories</h5>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="#" class="text-muted d-flex justify-content-between"><span>Education</span> <span>(12)</span></a></li>
-                                <li class="mb-2"><a href="#" class="text-muted d-flex justify-content-between"><span>Conservation</span> <span>(8)</span></a></li>
-                                <li class="mb-2"><a href="#" class="text-muted d-flex justify-content-between"><span>Animal Care</span> <span>(15)</span></a></li>
-                                <li class="mb-2"><a href="#" class="text-muted d-flex justify-content-between"><span>Myths Debunked</span> <span>(6)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted d-flex justify-content-between"><span>Education</span>
+                                        <span>(12)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted d-flex justify-content-between"><span>Conservation</span>
+                                        <span>(8)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted d-flex justify-content-between"><span>Animal Care</span>
+                                        <span>(15)</span></a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-muted d-flex justify-content-between"><span>Myths Debunked</span>
+                                        <span>(6)</span></a></li>
                             </ul>
                         </div>
-                        
-                        <div class="card p-4 border-0 shadow-sm mb-4">
+
+                        <div class="card p-4 border-0 shadow-sm mb-4 sidebar-card">
                             <h5 class="fw-bold mb-3">Popular Posts</h5>
                             <div class="d-flex mb-3">
-                                <img src="assets/images/gallery-4.png" alt="Post" class="rounded me-3" width="70" height="70" style="object-fit: cover;">
+                                <img src="assets/images/gallery-4.png" alt="Post" class="rounded me-3" width="70"
+                                    height="70" style="object-fit: cover;">
                                 <div>
-                                    <h6 class="fw-bold mb-1"><a href="#" class="text-dark">The Magic of Metamorphosis</a></h6>
+                                    <h6 class="fw-bold mb-1"><a href="#" class="text-dark">The Magic of
+                                            Metamorphosis</a></h6>
                                     <small class="text-muted">April 20, 2026</small>
                                 </div>
                             </div>
                             <div class="d-flex mb-0">
-                                <img src="assets/images/gallery-5.png" alt="Post" class="rounded me-3" width="70" height="70" style="object-fit: cover;">
+                                <img src="assets/images/gallery-5.png" alt="Post" class="rounded me-3" width="70"
+                                    height="70" style="object-fit: cover;">
                                 <div>
-                                    <h6 class="fw-bold mb-1"><a href="#" class="text-dark">Reptiles in Urban Spaces</a></h6>
+                                    <h6 class="fw-bold mb-1"><a href="#" class="text-dark">The Reptiles in Urban
+                                            Spaces</a>
+                                    </h6>
                                     <small class="text-muted">April 15, 2026</small>
                                 </div>
                             </div>
@@ -233,28 +264,32 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-6 col-lg-3">
-                        <a href="#" class="card border-0 shadow-sm h-100 text-center p-4 bg-primary text-white text-decoration-none transition">
+                        <a href="#"
+                            class="card border-0 shadow-sm h-100 text-center p-4 bg-primary text-white text-decoration-none transition">
                             <i class="bi bi-mortarboard display-4 mb-3"></i>
                             <h5 class="fw-bold">Education</h5>
                             <p class="small mb-0 opacity-75">12 Articles</p>
                         </a>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <a href="#" class="card border-0 shadow-sm h-100 text-center p-4 bg-secondary text-white text-decoration-none transition">
+                        <a href="#"
+                            class="card border-0 shadow-sm h-100 text-center p-4 bg-secondary text-white text-decoration-none transition">
                             <i class="bi bi-globe-americas display-4 mb-3"></i>
                             <h5 class="fw-bold">Conservation</h5>
                             <p class="small mb-0 opacity-75">8 Articles</p>
                         </a>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <a href="#" class="card border-0 shadow-sm h-100 text-center p-4 bg-dark text-white text-decoration-none transition">
+                        <a href="#"
+                            class="card border-0 shadow-sm h-100 text-center p-4 bg-dark text-white text-decoration-none transition">
                             <i class="bi bi-heart-pulse display-4 mb-3"></i>
                             <h5 class="fw-bold">Animal Care</h5>
                             <p class="small mb-0 opacity-75">15 Articles</p>
                         </a>
                     </div>
                     <div class="col-6 col-lg-3">
-                        <a href="#" class="card border-0 shadow-sm h-100 text-center p-4 bg-accent text-dark text-decoration-none transition">
+                        <a href="#"
+                            class="card border-0 shadow-sm h-100 text-center p-4 bg-accent text-dark text-decoration-none transition">
                             <i class="bi bi-shield-x display-4 mb-3"></i>
                             <h5 class="fw-bold">Myths</h5>
                             <p class="small mb-0 opacity-75">6 Articles</p>
@@ -269,21 +304,26 @@
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div class="bg-primary text-white rounded-5 p-5 shadow-lg text-center position-relative overflow-hidden">
+                        <div
+                            class="bg-primary text-white rounded-5 p-5 shadow-lg text-center position-relative overflow-hidden">
                             <div class="position-relative z-1">
                                 <h2 class="display-5 fw-bold mb-3">Never Miss a Scale</h2>
-                                <p class="lead mb-5 opacity-75">Get monthly herpetology insights, conservation news, and animal updates delivered to your inbox.</p>
+                                <p class="lead mb-5 opacity-75">Get monthly herpetology insights, conservation news, and
+                                    animal updates delivered to your inbox.</p>
                                 <form class="row g-2 justify-content-center needs-validation" novalidate>
                                     <div class="col-md-6">
-                                        <input type="email" class="form-control form-control-lg rounded-pill px-4" placeholder="Enter your email" required>
+                                        <input type="email" class="form-control form-control-lg rounded-pill px-4"
+                                            placeholder="Enter your email" required>
                                     </div>
                                     <div class="col-md-auto">
-                                        <button type="submit" class="btn btn-accent btn-lg px-5 rounded-pill fw-bold">Join the Newsletter</button>
+                                        <button type="submit"
+                                            class="btn btn-accent btn-lg px-5 rounded-pill fw-bold">Join the
+                                            Newsletter</button>
                                     </div>
                                 </form>
                             </div>
                             <!-- Decorative Icon -->
-                            <i class="bi bi-envelope-paper-fill position-absolute bottom-0 end-0 display-1 opacity-10 m-4" style="font-size: 10rem !important;"></i>
+                            <!-- <i class="bi bi-envelope-paper-fill position-absolute bottom-0 end-0 display-1 opacity-10 m-4" style="font-size: 10rem !important;"></i> -->
                         </div>
                     </div>
                 </div>
@@ -299,7 +339,8 @@
                     <a class="navbar-brand d-flex align-items-center mb-3" href="#">
                         <img src="assets/images/logo.png" alt="Scales & Skin Logo">
                     </a>
-                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical, and unforgettable encounters for all ages.</p>
+                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical,
+                        and unforgettable encounters for all ages.</p>
                     <div class="d-flex gap-3 mt-4">
                         <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
@@ -328,7 +369,8 @@
                     <h5 class="text-white mb-3">Newsletter</h5>
                     <p class="text-muted">Stay updated with our latest news and events.</p>
                     <form class="input-group mb-3 needs-validation" novalidate>
-                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email Address" required>
+                        <input type="email" class="form-control bg-dark border-secondary text-white"
+                            placeholder="Email Address" required>
                         <button class="btn btn-primary" type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -355,4 +397,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

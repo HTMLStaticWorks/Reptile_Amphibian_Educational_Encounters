@@ -40,6 +40,61 @@
 </head>
 <body>
 
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="Scales & Skin Logo">
+                </a>
+
+                <div class="d-flex align-items-center order-lg-last ms-2">
+                    <button class="btn btn-outline-primary ms-2 px-2" id="themeToggle">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-outline-primary ms-2 px-3 fw-bold" id="rtlToggle">RTL</button>
+                    <a href="login.html" class="btn btn-primary ms-3 d-none d-lg-block">Login</a>
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse desktop-nav" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
+                <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
     <main class="coming-soon-page">
         <div class="container">
             <h1 class="display-3 fw-bold mb-4">Something Wild is Coming</h1>
@@ -81,6 +136,47 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3" href="index.html">
+                        <img src="assets/images/logo.png" alt="Scales & Skin Logo">
+                    </a>
+                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical, and unforgettable encounters for all ages.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-muted">About Us</a></li>
+                        <li><a href="services.html" class="text-muted">Programs</a></li>
+                        <li><a href="gallery.html" class="text-muted">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="get-info.html" class="text-muted">Pricing</a></li>
+                        <li><a href="get-info.html#booking" class="text-muted">Booking</a></li>
+                        <li><a href="get-info.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-muted">Stay updated with our latest news and events.</p>
+                    <form class="input-group mb-3">
+                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email Address">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <p class="text-center text-muted mb-0">&copy; 2026 Scales & Skin. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

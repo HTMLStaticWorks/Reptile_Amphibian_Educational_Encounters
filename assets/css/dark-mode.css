@@ -50,6 +50,14 @@
     background-color: var(--bg-light) !important;
 }
 
+[data-bs-theme="dark"] .bg-white {
+    background-color: var(--bg-body) !important;
+}
+
+[data-bs-theme="dark"] .bg-accent {
+    background-color: rgba(0, 206, 209, 0.15) !important; /* Subtle accent in dark mode */
+}
+
 [data-bs-theme="dark"] .form-control {
     background-color: #2c2c2c;
     border-color: #444;
@@ -84,11 +92,33 @@
     color: #000; 
 }
 
-/* Invert text-dark if it's likely on a dark background */
+/* Invert text-dark and text-secondary if they're likely on a dark background */
 [data-bs-theme="dark"] .bg-body .text-dark,
 [data-bs-theme="dark"] .bg-light .text-dark,
-[data-bs-theme="dark"] .card .text-dark {
+[data-bs-theme="dark"] .bg-white .text-dark,
+[data-bs-theme="dark"] .bg-accent .text-dark,
+[data-bs-theme="dark"] .card .text-dark,
+[data-bs-theme="dark"] .bg-body .text-secondary,
+[data-bs-theme="dark"] .bg-light .text-secondary,
+[data-bs-theme="dark"] .bg-white .text-secondary,
+[data-bs-theme="dark"] .bg-accent .text-secondary {
     color: var(--text-color) !important;
+}
+
+/* Ensure paragraph and lead text in these sections is also visible */
+[data-bs-theme="dark"] .bg-light,
+[data-bs-theme="dark"] .bg-white,
+[data-bs-theme="dark"] .bg-accent,
+[data-bs-theme="dark"] .bg-light p,
+[data-bs-theme="dark"] .bg-white p,
+[data-bs-theme="dark"] .bg-accent p,
+[data-bs-theme="dark"] .bg-light .lead,
+[data-bs-theme="dark"] .bg-white .lead,
+[data-bs-theme="dark"] .bg-accent .lead,
+[data-bs-theme="dark"] .bg-white table,
+[data-bs-theme="dark"] .bg-white td,
+[data-bs-theme="dark"] .bg-white th:not(.glass-header) {
+    color: var(--text-color);
 }
 
 /* Ensure text-white stays visible */
