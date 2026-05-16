@@ -104,3 +104,6 @@
 [data-bs-theme="dark"] footer a.text-muted:hover {
     color: var(--accent-color) !important;
 }
+[data-bs-theme="dark"] #map iframe {
+    filter: invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.1);
+}

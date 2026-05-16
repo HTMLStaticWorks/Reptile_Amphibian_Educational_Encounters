@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Encounters | Scales & Skin</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
     <style>
         .hero-v2 {
-            min-height: 80vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero-2.jpg') center/cover;
-            display: flex;
-            align-items: center;
-            color: white;
-            padding-top: 100px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/herohome2.jpg') center/cover;
         }
+
         .icon-box {
             width: 70px;
             height: 70px;
@@ -41,12 +40,14 @@
             margin-bottom: 20px;
             transition: var(--transition);
         }
+
         .feature-item:hover .icon-box {
             background: var(--primary-color);
             color: white;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header (Same as index) -->
@@ -56,14 +57,15 @@
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="assets/images/logo.png" alt="Scales & Skin Logo">
                 </a>
-                
+
                 <div class="d-flex align-items-center order-lg-last ms-2">
                     <button class="btn btn-outline-primary ms-2 px-2" id="themeToggle">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                     <button class="btn btn-outline-primary ms-2 px-3 fw-bold" id="rtlToggle">RTL</button>
                     <a href="login.html" class="btn btn-primary ms-3 d-none d-lg-block">Login</a>
-                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -76,7 +78,7 @@
                         <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                     </ul>
                 </div>
             </div>
@@ -97,7 +99,7 @@
                 <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                 <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
             </ul>
         </div>
@@ -107,16 +109,21 @@
         <!-- Hero Section V2 -->
         <section class="hero-v2">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h6 class="text-uppercase fw-bold text-accent mb-3">Welcome to Scales & Skin</h6>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 reveal">
+                        <img src="assets/images/monitor.png" alt="Monitor Lizard" class="img-fluid floating-img">
+                    </div>
+                    <div class="col-lg-6 reveal">
+                        <h6 class="text-uppercase fw-bold text-white mb-3">Welcome to Scales & Skin</h6>
                         <h1 class="display-3 fw-bold mb-4">Discover the Secret World of Reptiles</h1>
-                        <p class="lead mb-5">Join us for an immersive educational journey where science meets adventure. Professional handlers, amazing animals, and memories that last a lifetime.</p>
+                        <p class="lead mb-5">Join us for an immersive educational journey where science meets adventure.
+                            Professional handlers, amazing animals, and memories that last a lifetime.</p>
                         <div class="d-flex gap-3">
-                            <a href="booking.html" class="btn btn-primary btn-lg px-4">Get Started</a>
+                            <a href="get-info.html" class="btn btn-primary btn-lg px-4">Get Started</a>
                             <a href="services.html" class="btn btn-outline-light btn-lg px-4">Our Programs</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -128,17 +135,20 @@
                     <div class="col-md-4 feature-item">
                         <div class="icon-box"><i class="bi bi-shield-fill-check"></i></div>
                         <h4>Expert Handlers</h4>
-                        <p class="text-muted">Our team consists of certified herpetologists and experienced educators dedicated to safety and knowledge.</p>
+                        <p class="text-muted">Our team consists of certified herpetologists and experienced educators
+                            dedicated to safety and knowledge.</p>
                     </div>
                     <div class="col-md-4 feature-item">
                         <div class="icon-box"><i class="bi bi-heart-fill"></i></div>
                         <h4>Animal Welfare</h4>
-                        <p class="text-muted">We prioritize the health and happiness of our animal ambassadors, providing them with the highest standard of care.</p>
+                        <p class="text-muted">We prioritize the health and happiness of our animal ambassadors,
+                            providing them with the highest standard of care.</p>
                     </div>
                     <div class="col-md-4 feature-item">
                         <div class="icon-box"><i class="bi bi-geo-alt-fill"></i></div>
                         <h4>We Come To You</h4>
-                        <p class="text-muted">No need to travel. We bring the entire experience directly to your school, home, or event venue.</p>
+                        <p class="text-muted">No need to travel. We bring the entire experience directly to your school,
+                            home, or event venue.</p>
                     </div>
                 </div>
             </div>
@@ -150,22 +160,251 @@
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <h2 class="display-5 fw-bold mb-4">Why Choose Us?</h2>
-                        <p>With over a decade of experience, Scales & Skin has become the region's leading provider of reptile education. Our unique approach combines entertainment with factual science, making learning fun for everyone.</p>
+                        <p>With over a decade of experience, Scales & Skin has become the region's leading provider of
+                            reptile education. Our unique approach combines entertainment with factual science, making
+                            learning fun for everyone.</p>
                         <ul class="list-unstyled mt-4">
-                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle text-primary me-3 fs-4"></i> Fully Insured & Licensed</li>
-                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle text-primary me-3 fs-4"></i> Diverse Animal Collection</li>
-                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle text-primary me-3 fs-4"></i> Age-Appropriate Content</li>
+                            <li class="mb-3 d-flex align-items-center"><i
+                                    class="bi bi-check-circle text-primary me-3 fs-4"></i> Fully Insured & Licensed</li>
+                            <li class="mb-3 d-flex align-items-center"><i
+                                    class="bi bi-check-circle text-primary me-3 fs-4"></i> Diverse Animal Collection
+                            </li>
+                            <li class="mb-3 d-flex align-items-center"><i
+                                    class="bi bi-check-circle text-primary me-3 fs-4"></i> Age-Appropriate Content</li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6">
-                                <img src="assets/images/feat-1.jpg" alt="Feature" class="img-fluid rounded-4 shadow-sm mb-3">
-                                <img src="assets/images/feat-2.jpg" alt="Feature" class="img-fluid rounded-4 shadow-sm">
+                                <img src="assets/images/gecko.png" alt="Leopard Gecko"
+                                    class="img-fluid rounded-4 shadow-sm mb-3">
+                                <img src="assets/images/monitor.png" alt="Monitor Lizard" class="img-fluid rounded-4 shadow-sm">
                             </div>
                             <div class="col-6 pt-5">
-                                <img src="assets/images/feat-3.jpg" alt="Feature" class="img-fluid rounded-4 shadow-sm mb-3">
-                                <img src="assets/images/feat-4.jpg" alt="Feature" class="img-fluid rounded-4 shadow-sm">
+                                <img src="assets/images/python.png" alt="Burmese Python"
+                                    class="img-fluid rounded-4 shadow-sm mb-3">
+                                <img src="assets/images/tortoise.png" alt="Sulcata Tortoise" class="img-fluid rounded-4 shadow-sm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conservation Section -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-last">
+                        <h6 class="text-uppercase fw-bold text-accent mb-3">Our Mission</h6>
+                        <h2 class="display-5 fw-bold mb-4">Protecting Wildlife Through Education</h2>
+                        <p class="lead mb-4">We believe that understanding leads to appreciation, and appreciation leads
+                            to conservation. A portion of every booking goes directly to supporting reptile conservation
+                            projects worldwide.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-globe-americas display-5 text-accent me-3"></i>
+                                    <div>
+                                        <h5 class="mb-0">Global Impact</h5>
+                                        <small>Supporting 5+ countries</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-shield-shaded display-5 text-accent me-3"></i>
+                                    <div>
+                                        <h5 class="mb-0">Species Rescue</h5>
+                                        <small>100+ Animals saved</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="assets/images/gecko.png" alt="Conservation" class="img-fluid rounded-4 shadow-lg">
+                            <div
+                                class="position-absolute bottom-0 start-0 bg-accent text-dark p-4 rounded-end-4 mb-4 d-none d-sm-block">
+                                <h4 class="mb-0 fw-bold">10% of Profits</h4>
+                                <p class="mb-0">Donated to Conservation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-5 bg-white">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Our Experts</h6>
+                    <h2 class="display-5 fw-bold">Meet the Specialists</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Dr. Alan Grant" class="rounded-circle mx-auto mb-4"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Dr. Alan Grant</h4>
+                            <p class="text-primary fw-bold">Lead Herpetologist</p>
+                            <p class="small text-muted">20+ years of experience in reptile behavior and conservation.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Sarah Harding" class="rounded-circle mx-auto mb-4"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Sarah Harding</h4>
+                            <p class="text-primary fw-bold">Senior Educator</p>
+                            <p class="small text-muted">Specializes in curriculum development and classroom engagement.
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Nick Van Owen" class="rounded-circle mx-auto mb-4"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Nick Van Owen</h4>
+                            <p class="text-primary fw-bold">Wildlife Photographer</p>
+                            <p class="small text-muted">Capturing the beauty of our ambassadors for educational
+                                materials.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card border-0 shadow-sm text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="Kelly Curtis" class="rounded-circle mx-auto mb-4"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Kelly Curtis</h4>
+                            <p class="text-primary fw-bold">Animal Care Specialist</p>
+                            <p class="small text-muted">Ensuring our ambassadors receive the best nutritional and health
+                                care.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="bg-accent rounded-5 p-5 shadow-lg position-relative overflow-hidden">
+                    <div class="row align-items-center position-relative z-1">
+                        <div class="col-lg-6 text-dark">
+                            <h2 class="display-5 fw-bold mb-3">Stay in the Loop</h2>
+                            <p class="lead mb-0">Get the latest news on our animal ambassadors, conservation tips, and
+                                exclusive event discounts.</p>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <form class="row g-2 needs-validation" novalidate>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control form-control-lg rounded-pill"
+                                        placeholder="Enter your email" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit"
+                                        class="btn btn-dark btn-lg w-100 rounded-pill">Subscribe</button>
+                                </div>
+                            </form>
+                            <p class="small text-dark mt-3 mb-0 opacity-75 text-center text-lg-start">We respect your
+                                privacy. Unsubscribe at any time.</p>
+                        </div>
+                    </div>
+                    <!-- Decorative Circle -->
+                    <div class="position-absolute top-0 end-0 bg-white opacity-25 rounded-circle"
+                        style="width: 300px; height: 300px; transform: translate(30%, -30%);"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Common Questions</h6>
+                    <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold py-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Are the animals safe to touch?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body py-4">
+                                        Yes! All our animal ambassadors are hand-picked for their calm temperament and
+                                        are accustomed to human interaction. Our expert handlers supervise every
+                                        interaction to ensure safety for both the guests and the animals.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        What happens if it rains during an outdoor event?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body py-4">
+                                        We require an indoor alternative or a well-covered area for all events. Many of
+                                        our animals are sensitive to temperature and moisture, so we must ensure they
+                                        are protected from the elements at all times.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        How far do you travel for events?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body py-4">
+                                        We typically serve a 50-mile radius from our headquarters. For events further
+                                        away, a small travel fee may apply. Please contact us for a specific quote for
+                                        your location.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Can we request specific animals for our program?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body py-4">
+                                        While we try our best to accommodate requests, animal welfare is our top
+                                        priority. We rotate our ambassadors to ensure they get plenty of rest. We will
+                                        confirm the final lineup of animals a few days before your event.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -182,7 +421,8 @@
                     <a class="navbar-brand d-flex align-items-center mb-3" href="#">
                         <img src="assets/images/logo.png" alt="Scales & Skin Logo">
                     </a>
-                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical, and unforgettable encounters for all ages.</p>
+                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical,
+                        and unforgettable encounters for all ages.</p>
                     <div class="d-flex gap-3 mt-4">
                         <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
@@ -204,14 +444,15 @@
                         <li><a href="service-details.html" class="text-muted">School Programs</a></li>
                         <li><a href="service-details.html" class="text-muted">Birthday Parties</a></li>
                         <li><a href="service-details.html" class="text-muted">Safety Guidelines</a></li>
-                        <li><a href="booking.html" class="text-muted">Online Booking</a></li>
+                        <li><a href="get-info.html" class="text-muted">Online Booking</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <h5 class="text-white mb-3">Newsletter</h5>
                     <p class="text-muted">Stay updated with our latest news and events.</p>
                     <form class="input-group mb-3 needs-validation" novalidate>
-                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email Address" required>
+                        <input type="email" class="form-control bg-dark border-secondary text-white"
+                            placeholder="Email Address" required>
                         <button class="btn btn-primary" type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -238,4 +479,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

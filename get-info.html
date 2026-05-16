@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Info | Scales & Skin</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/safety.jpg') center/cover;
+        }
+        .pricing-card {
+            border: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        .pricing-card.featured {
+            background: var(--primary-color);
+            color: white;
+        }
+        .pricing-card.featured .text-muted {
+            color: rgba(255,255,255,0.7) !important;
+        }
+        .pricing-card.featured .btn-primary {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+        }
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        #map {
+            height: 100%;
+            min-height: 450px;
+            border-radius: var(--border-radius);
+            background: #e9ecef;
+            overflow: hidden;
+        }
+        #map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .align-left-custom {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+        .align-left-custom h4, 
+        .align-left-custom h5,
+        .align-left-custom p,
+        .align-left-custom ul,
+        .align-left-custom label,
+        .align-left-custom .form-label {
+            text-align: left !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .align-left-custom .contact-icon {
+            margin-left: 0 !important;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        .benefit-item i {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            color: var(--accent-color);
+        }
+        .benefit-item h6 {
+            margin-bottom: 0.2rem;
+            color: white;
+            text-align: left !important;
+        }
+        .benefit-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="Scales & Skin Logo">
+                </a>
+                
+                <div class="d-flex align-items-center order-lg-last ms-2">
+                    <button class="btn btn-outline-primary ms-2 px-2" id="themeToggle">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-outline-primary ms-2 px-3 fw-bold" id="rtlToggle">RTL</button>
+                    <a href="login.html" class="btn btn-primary ms-3 d-none d-lg-block">Login</a>
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse desktop-nav" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="get-info.html">Get Info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link active" href="get-info.html">Get Info</a></li>
+                <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 reveal">
+                        <img src="assets/images/gecko.png" alt="Get Information" class="img-fluid floating-img" style="max-height: 300px;">
+                    </div>
+                    <div class="col-lg-7 reveal">
+                        <h1 class="display-3 fw-bold">Get Information</h1>
+                        <p class="lead">Pricing, Booking, and Contact — all in one place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="py-5 reveal">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Our Rates</h6>
+                    <h2 class="display-5 fw-bold">Transparent Pricing</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card pricing-card p-5 shadow-sm text-center">
+                            <h4 class="fw-bold mb-4">Basic Party</h4>
+                            <div class="display-4 fw-bold mb-3">$150</div>
+                            <p class="text-muted mb-4">Perfect for small home gatherings.</p>
+                            <ul class="list-unstyled mb-5 text-start">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> 6-8 Animal Ambassadors</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> 45 Minutes Presentation</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Interactive Handling</li>
+                                <li class="text-muted"><i class="bi bi-x-circle-fill me-2"></i> Professional Photography</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-outline-primary w-100 btn-lg mt-auto">Choose Plan</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card pricing-card featured p-5 shadow-lg text-center">
+                            <div class="badge bg-accent text-dark mb-4 px-3 py-2 rounded-pill">Most Popular</div>
+                            <h4 class="fw-bold mb-4">Educational Plus</h4>
+                            <div class="display-4 fw-bold mb-3">$250</div>
+                            <p class="text-white-50 mb-4">Ideal for school assemblies and larger groups.</p>
+                            <ul class="list-unstyled mb-5 text-start">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> 10-12 Animal Ambassadors</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> 60 Minutes Presentation</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Interactive Handling & Q&A</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Educational Handouts</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-primary w-100 btn-lg mt-auto">Choose Plan</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card pricing-card p-5 shadow-sm text-center">
+                            <h4 class="fw-bold mb-4">Premium Event</h4>
+                            <div class="display-4 fw-bold mb-3">$450</div>
+                            <p class="text-muted mb-4">Complete package for corporate and large events.</p>
+                            <ul class="list-unstyled mb-5 text-start">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> 15+ Animal Ambassadors</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> 90 Minutes Presentation</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Extended Handling Session</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Professional Photography</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-outline-primary w-100 btn-lg mt-auto">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="py-5 bg-light reveal">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Reservations</h6>
+                    <h2 class="display-5 fw-bold">Online Booking</h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <form class="needs-validation card p-4 border-0 shadow-sm align-left-custom" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">First Name</label>
+                                    <input type="text" class="form-control" placeholder="John" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="john@example.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="(555) 000-0000" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label fw-bold">Program Type</label>
+                                    <select class="form-select" required>
+                                        <option value="" selected disabled>Choose a program...</option>
+                                        <option>School Assembly</option>
+                                        <option>Birthday Party</option>
+                                        <option>Corporate Event</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Preferred Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Preferred Time</label>
+                                    <input type="time" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold">Additional Details</label>
+                                    <textarea class="form-control" rows="4" placeholder="Tell us more about your event..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-primary btn-lg w-100" type="submit">Submit Booking Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-4 border-0 shadow-sm bg-primary text-white h-100 align-left-custom">
+                            <h5 class="fw-bold mb-4">Why Book Online?</h5>
+                            <div class="benefit-item">
+                                <i class="bi bi-lightning-charge-fill"></i>
+                                <div>
+                                    <h6 class="fw-bold">Priority Processing</h6>
+                                    <p>Online requests are routed directly to our scheduling experts for the fastest possible response.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="bi bi-calendar2-check-fill"></i>
+                                <div>
+                                    <h6 class="fw-bold">24/7 Availability</h6>
+                                    <p>Browse available dates and submit your reservation request at your convenience, day or night.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="bi bi-person-badge-fill"></i>
+                                <div>
+                                    <h6 class="fw-bold">Direct Expert Link</h6>
+                                    <p>Get paired with a dedicated animal handler who will help tailor the encounter to your needs.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="bi bi-shield-lock-fill"></i>
+                                <div>
+                                    <h6 class="fw-bold">Secure & Simple</h6>
+                                    <p>Your event details are handled with the highest level of security and professional care.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map Section -->
+        <section class="py-5 reveal">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Connect</h6>
+                    <h2 class="display-5 fw-bold">Contact & Location</h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="card p-4 border-0 shadow-sm h-100 align-left-custom">
+                            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                            <h4 class="fw-bold">Our Office</h4>
+                            <p class="text-muted">123 Nature Way, Wildwood, CA 90210</p>
+                            <hr class="my-4">
+                            <div class="contact-icon bg-secondary"><i class="bi bi-envelope"></i></div>
+                            <h4 class="fw-bold">Email Us</h4>
+                            <p class="text-muted">info@scalesandskin.com</p>
+                            <hr class="my-4">
+                            <div class="contact-icon bg-accent text-dark"><i class="bi bi-telephone"></i></div>
+                            <h4 class="fw-bold">Call Us</h4>
+                            <p class="text-muted">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div id="map" class="h-100 shadow-sm">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.715220358444!2d-118.423982823436!3d34.05115741777263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb205b38d317%3A0xf639a039efc57a92!2s123%20Nature%20Way!5e0!3m2!1sen!2sus!4v1715856000000!5m2!1sen!2sus" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3" href="index.html">
+                        <img src="assets/images/logo.png" alt="Scales & Skin Logo">
+                    </a>
+                    <p class="text-muted">Bringing the magic of reptiles and amphibians to you. Educational, ethical, and unforgettable encounters for all ages.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-muted">About Us</a></li>
+                        <li><a href="services.html" class="text-muted">Programs</a></li>
+                        <li><a href="gallery.html" class="text-muted">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="get-info.html" class="text-muted">Pricing</a></li>
+                        <li><a href="get-info.html#booking" class="text-muted">Booking</a></li>
+                        <li><a href="get-info.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-muted">Stay updated with our latest news and events.</p>
+                    <form class="input-group mb-3">
+                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email Address">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <p class="text-center text-muted mb-0">&copy; 2026 Scales & Skin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop"><i class="bi bi-arrow-up"></i></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

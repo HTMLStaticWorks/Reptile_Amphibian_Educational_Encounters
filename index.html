@@ -11,13 +11,20 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Scales & Skin | Educational Encounters">
     <meta property="og:description" content="Discover the fascinating world of reptiles and amphibians through our educational programs.">
-    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:image" content="assets/images/og-image.png">
     <meta property="og:url" content="https://scalesandskin.com">
+    <link rel="canonical" href="https://scalesandskin.com">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scales & Skin | Reptile & Amphibian Educational Encounters">
+    <meta name="twitter:description" content="Discover the fascinating world of reptiles and amphibians through our premium educational programs.">
+    <meta name="twitter:image" content="assets/images/og-image.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +81,7 @@
                         <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +102,7 @@
                 <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                 <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
             </ul>
         </div>
@@ -103,23 +110,26 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero text-center text-lg-start">
+        <section class="hero">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 reveal">
                         <h1 class="display-2 fw-bold mb-4">Unforgettable <span class="text-accent">Reptile</span> Encounters</h1>
                         <p class="lead mb-5">Experience the wonder of nature's most fascinating creatures through our professional educational programs and private events.</p>
-                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <div class="d-flex gap-3">
                             <a href="services.html" class="btn btn-primary btn-lg">Explore Programs</a>
                             <a href="about.html" class="btn btn-outline-light btn-lg">Meet the Ambassadors</a>
                         </div>
+                    </div>
+                    <div class="col-lg-5 reveal">
+                        <img src="assets/images/python.png" alt="Ball Python" class="img-fluid floating-img">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Features/Programs Section -->
-        <section class="py-5 bg-light">
+        <section class="py-5 bg-light reveal">
             <div class="container py-5">
                 <div class="text-center mb-5">
                     <h6 class="text-uppercase fw-bold text-secondary">Our Offerings</h6>
@@ -154,8 +164,55 @@
             </div>
         </section>
 
+        <!-- Animal Ambassador Spotlight -->
+        <section class="py-5 reveal">
+            <div class="container py-5">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h6 class="text-uppercase fw-bold text-secondary">Meet the Stars</h6>
+                        <h2 class="display-5 fw-bold">Animal Ambassadors</h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a href="about.html" class="btn btn-outline-primary">View All Ambassadors</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="assets/images/gecko.png" class="card-img-top ambassador-img" alt="Leopard Gecko">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Reptile</span>
+                                <h4 class="card-title">Ziggy the Gecko</h4>
+                                <p class="card-text text-muted">A friendly Leopard Gecko known for his beautiful spots and calm temperament.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="assets/images/python.png" class="card-img-top ambassador-img" alt="Ball Python">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Reptile</span>
+                                <h4 class="card-title">Monty the Python</h4>
+                                <p class="card-text text-muted">Our gentle Ball Python, perfect for first-time snake encounters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 overflow-hidden">
+                            <img src="assets/images/tortoise.png" class="card-img-top ambassador-img" alt="Sulcata Tortoise">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Reptile</span>
+                                <h4 class="card-title">Tank the Tortoise</h4>
+                                <p class="card-text text-muted">A majestic Sulcata Tortoise that loves munching on greens and meeting new friends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Stats Section -->
-        <section class="stats-section py-5 bg-primary text-white">
+        <section class="stats-section py-5 bg-primary text-white reveal">
             <div class="container py-5">
                 <div class="row g-4 text-center">
                     <div class="col-6 col-md-3">
@@ -178,32 +235,206 @@
             </div>
         </section>
 
+        <!-- Booking Process Section -->
+        <section class="py-5 bg-light reveal">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Simple & Easy</h6>
+                    <h2 class="display-5 fw-bold">How It Works</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4 text-center">
+                        <div class="process-step mb-4">
+                            <div class="step-number">1</div>
+                            <div class="step-icon text-primary mt-3"><i class="bi bi-calendar-check display-4"></i></div>
+                        </div>
+                        <h3>Choose Program</h3>
+                        <p class="text-muted">Select the educational program or party package that fits your needs.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="process-step mb-4">
+                            <div class="step-number">2</div>
+                            <div class="step-icon text-primary mt-3"><i class="bi bi-pencil-square display-4"></i></div>
+                        </div>
+                        <h3>Book Online</h3>
+                        <p class="text-muted">Fill out our simple booking form with your event details and preferred date.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="process-step mb-4">
+                            <div class="step-number">3</div>
+                            <div class="step-icon text-primary mt-3"><i class="bi bi-emoji-smile display-4"></i></div>
+                        </div>
+                        <h3>Meet the Animals</h3>
+                        <p class="text-muted">We bring our amazing animal ambassadors to your location for an unforgettable experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Testimonials -->
-        <section class="py-5">
+        <section class="py-5 reveal">
             <div class="container py-5">
                 <div class="text-center mb-5">
                     <h6 class="text-uppercase fw-bold text-secondary">Testimonials</h6>
                     <h2 class="display-5 fw-bold">What People Say</h2>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card p-4 border-0 bg-light">
-                            <div class="d-flex mb-3 text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="card p-5 border-0 text-center">
+                                        <div class="d-flex justify-content-center mb-4 text-warning fs-4">
+                                            <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+                                        </div>
+                                        <p class="fs-4 fst-italic mb-4">"The kids were absolutely mesmerized! It was both educational and thrilling. Highly recommend for any school event."</p>
+                                        <h5 class="mb-0 fw-bold">Sarah Jenkins</h5>
+                                        <small class="text-muted text-uppercase fw-bold">Elementary Principal</small>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="fst-italic">"The kids were absolutely mesmerized! It was both educational and thrilling. Highly recommend for any school event."</p>
-                            <h5 class="mb-0">Sarah Jenkins</h5>
-                            <small class="text-muted">Elementary Principal</small>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="card p-5 border-0 text-center">
+                                        <div class="d-flex justify-content-center mb-4 text-warning fs-4">
+                                            <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+                                        </div>
+                                        <p class="fs-4 fst-italic mb-4">"Best birthday party ever! The staff was professional and the animals were clearly well-loved and cared for."</p>
+                                        <h5 class="mb-0 fw-bold">Michael Ross</h5>
+                                        <small class="text-muted text-uppercase fw-bold">Parent</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card p-4 border-0 bg-light">
-                            <div class="d-flex mb-3 text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="py-5 bg-white reveal">
+            <div class="container py-5">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h6 class="text-uppercase fw-bold text-secondary">Join Us</h6>
+                        <h2 class="display-5 fw-bold">Upcoming Public Events</h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a href="get-info.html#contact" class="btn btn-primary">Inquire About Private Events</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <div class="bg-primary text-white p-3 text-center">
+                                <h4 class="mb-0">MAY 25</h4>
                             </div>
-                            <p class="fst-italic">"Best birthday party ever! The staff was professional and the animals were clearly well-loved and cared for."</p>
-                            <h5 class="mb-0">Michael Ross</h5>
-                            <small class="text-muted">Parent</small>
+                            <div class="card-body p-4">
+                                <h5>City Library Talk</h5>
+                                <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Main St. Library</p>
+                                <p>A free educational talk about local reptiles and conservation efforts.</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">2:00 PM - 3:30 PM</span>
+                                    <span class="badge bg-success">Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <div class="bg-primary text-white p-3 text-center">
+                                <h4 class="mb-0">JUN 12</h4>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5>Reptile Expo Showcase</h5>
+                                <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Convention Center</p>
+                                <p>Meet our ambassadors and learn about exotic reptile care at the annual expo.</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">10:00 AM - 5:00 PM</span>
+                                    <span class="badge bg-primary">$15 Entry</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <div class="bg-primary text-white p-3 text-center">
+                                <h4 class="mb-0">JUL 04</h4>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5>Nature Park Festival</h5>
+                                <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Riverside Park</p>
+                                <p>Outdoor interactive session for families during the community festival.</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">1:00 PM - 4:00 PM</span>
+                                    <span class="badge bg-success">Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5 bg-light reveal">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">Common Questions</h6>
+                    <h2 class="display-5 fw-bold">Everything You Need to Know</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="indexFaq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#ifaq1">
+                                        How many animals do you bring?
+                                    </button>
+                                </h2>
+                                <div id="ifaq1" class="accordion-collapse collapse show" data-bs-parent="#indexFaq">
+                                    <div class="accordion-body py-4">
+                                        Depending on the package, we bring between 6 and 15+ animal ambassadors, including snakes, lizards, tortoises, and amphibians.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#ifaq2">
+                                        Is it safe for young children?
+                                    </button>
+                                </h2>
+                                <div id="ifaq2" class="accordion-collapse collapse" data-bs-parent="#indexFaq">
+                                    <div class="accordion-body py-4">
+                                        Absolutely! We tailor our presentation to the age group. Our animals are hand-picked for their calm temperaments, and we strictly supervise all interactions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#ifaq3">
+                                        What are your travel requirements?
+                                    </button>
+                                </h2>
+                                <div id="ifaq3" class="accordion-collapse collapse" data-bs-parent="#indexFaq">
+                                    <div class="accordion-body py-4">
+                                        We need a climate-controlled indoor space or a protected outdoor area, a nearby power outlet, and a table for our ambassadors.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +442,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="py-5 bg-accent text-dark text-center">
+        <section class="py-5 bg-accent text-dark text-center reveal">
             <div class="container py-5">
                 <h2 class="display-5 fw-bold mb-4">Ready to Start Your Adventure?</h2>
                 <p class="lead mb-5">Book your educational encounter today and save 10% on your first event.</p>
@@ -250,7 +481,7 @@
                         <li><a href="service-details.html" class="text-muted">School Programs</a></li>
                         <li><a href="service-details.html" class="text-muted">Birthday Parties</a></li>
                         <li><a href="service-details.html" class="text-muted">Safety Guidelines</a></li>
-                        <li><a href="booking.html" class="text-muted">Online Booking</a></li>
+                        <li><a href="get-info.html" class="text-muted">Online Booking</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4">

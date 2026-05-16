@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -54,12 +54,12 @@
                 <div class="collapse navbar-collapse desktop-nav" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
                         <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,12 +75,12 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Special</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Programs</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Explore</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="get-info.html">Get Info</a></li>
                 <li class="nav-item mt-3"><a href="login.html" class="btn btn-primary w-100">Login</a></li>
             </ul>
         </div>
@@ -109,7 +109,7 @@
                 <div class="row g-5">
                     <div class="col-lg-8">
                         <div class="post-content">
-                            <img src="assets/images/blog-1.jpg" alt="Blog Image" class="img-fluid w-100">
+                            <img src="assets/images/gallery-1.png" alt="Blog Image" class="img-fluid w-100">
                             <p class="lead mb-4">Reptiles are among the most resilient creatures on Earth, having adapted to almost every environment imaginable over millions of years.</p>
                             
                             <h3 class="fw-bold mt-5 mb-3">Thermoregulation</h3>
@@ -129,7 +129,7 @@
                         <div class="mt-5 pt-5 border-top">
                             <h3 class="fw-bold mb-4">Comments (4)</h3>
                             <div class="d-flex mb-4">
-                                <img src="assets/images/user-1.jpg" alt="User" class="rounded-circle me-3" width="60" height="60">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" alt="User" class="rounded-circle me-3" width="60" height="60">
                                 <div>
                                     <h6 class="fw-bold mb-1">Emily Davis</h6>
                                     <small class="text-muted d-block mb-2">May 16, 2026</small>
@@ -161,14 +161,88 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="card p-4 border-0 shadow-sm mb-4">
-                            <h5 class="fw-bold mb-3">About the Author</h5>
-                            <div class="text-center mb-3">
-                                <img src="assets/images/author.jpg" alt="Author" class="rounded-circle mb-3" width="100" height="100">
-                                <h6 class="fw-bold">Dr. Scales</h6>
-                                <p class="small text-muted">Lead Herpetologist at Scales & Skin with over 20 years of research experience.</p>
+                        <div class="sticky-sidebar">
+                            <div class="card p-4 border-0 shadow-sm mb-4">
+                                <h5 class="fw-bold mb-3">About the Author</h5>
+                                <div class="text-center mb-3">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Author" class="rounded-circle mb-3" width="100" height="100" style="object-fit: cover;">
+                                    <h6 class="fw-bold">Dr. Alan Grant</h6>
+                                    <p class="small text-muted">Lead Herpetologist at Scales & Skin with over 20 years of research experience in reptile behavior and conservation.</p>
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-twitter-x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card p-4 border-0 shadow-sm mb-4 bg-primary text-white text-center">
+                                <h5 class="fw-bold mb-3">Share this Article</h5>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#" class="text-white fs-4"><i class="bi bi-link-45deg"></i></a>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Posts Section -->
+        <section class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-uppercase fw-bold text-secondary">More to Read</h6>
+                    <h2 class="display-5 fw-bold">Related Articles</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="assets/images/gallery-2.png" class="card-img-top" alt="Blog" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-2">Top 5 Myths About Snakes</h5>
+                                <p class="text-muted small">Debunking common misconceptions about our slithery friends.</p>
+                                <a href="blog-details.html" class="text-primary fw-bold small text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="assets/images/gallery-3.png" class="card-img-top" alt="Blog" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-2">Creating a Wildlife-Friendly Backyard</h5>
+                                <p class="text-muted small">Learn how you can support local amphibian populations.</p>
+                                <a href="blog-details.html" class="text-primary fw-bold small text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="assets/images/gallery-6.png" alt="Blog" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-2">The Magic of Metamorphosis</h5>
+                                <p class="text-muted small">Exploring the life cycles of frogs and salamanders.</p>
+                                <a href="blog-details.html" class="text-primary fw-bold small text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post Newsletter CTA -->
+        <section class="py-5 bg-white text-center">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-5 fw-bold mb-4">Enjoyed this Article?</h2>
+                        <p class="lead mb-5 text-muted">Join our community of nature lovers and get the latest herpetology news delivered straight to your inbox.</p>
+                        <form class="input-group mb-3 shadow-sm rounded-pill overflow-hidden needs-validation" novalidate style="max-width: 500px; margin: 0 auto;">
+                            <input type="email" class="form-control border-0 p-3 px-4" placeholder="Your Email Address" required>
+                            <button class="btn btn-primary px-4 fw-bold" type="submit">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -205,7 +279,7 @@
                         <li><a href="service-details.html" class="text-muted">School Programs</a></li>
                         <li><a href="service-details.html" class="text-muted">Birthday Parties</a></li>
                         <li><a href="service-details.html" class="text-muted">Safety Guidelines</a></li>
-                        <li><a href="booking.html" class="text-muted">Online Booking</a></li>
+                        <li><a href="get-info.html" class="text-muted">Online Booking</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4">
