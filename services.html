@@ -72,11 +72,12 @@
             background: rgba(74, 93, 35, 0.05);
             border: 2px solid var(--primary-color) !important;
             position: relative;
+            overflow: visible !important;
         }
 
         .featured-badge {
             position: absolute;
-            top: -15px;
+            top: -18px; /* Slightly higher */
             left: 50%;
             transform: translateX(-50%);
             background: var(--primary-color);
@@ -85,8 +86,9 @@
             border-radius: 20px;
             font-size: 0.75rem;
             font-weight: bold;
-            z-index: 2;
+            z-index: 10; /* Higher z-index */
             white-space: nowrap;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .pricing-table th.featured-plan {
@@ -95,8 +97,19 @@
         }
 
         .table-responsive {
-            padding-top: 15px;
-            margin-top: -15px;
+            padding-top: 25px; /* Increased space for the badge */
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @media (max-width: 767.98px) {
+            .pricing-table {
+                min-width: 700px;
+            }
+            
+            .table-responsive {
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
         }
 
         .partner-logo {
@@ -305,8 +318,9 @@
                     <h6 class="text-uppercase fw-bold text-secondary">Compare Options</h6>
                     <h2 class="display-5 fw-bold">Program Packages</h2>
                 </div>
-                <div class="table-responsive shadow-lg rounded-4 overflow-hidden bg-white">
-                    <table class="table table-hover mb-0 pricing-table">
+                <div class="shadow-lg rounded-4 overflow-hidden bg-white">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0 pricing-table">
                         <thead class="glass-header text-white">
                             <tr>
                                 <th class="py-4 ps-4 border-0">Features</th>
@@ -359,7 +373,9 @@
                     </table>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
 
         <!-- Safety Protocols Section -->
         <section class="py-5 bg-white">
@@ -424,12 +440,12 @@
         <!-- Service Area Section -->
         <section class="py-5 bg-primary text-white text-center">
             <div class="container py-5">
-                <h2 class="display-5 fw-bold mb-4">Where We Roam</h2>
+                <h2 class="display-5 fw-bold mb-4 text-white">Where We Roam</h2>
                 <p class="lead mb-5">We proudly serve the greater metropolitan area and surrounding communities within a
                     60-mile radius.</p>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="card bg-white text-dark p-4 rounded-4 border-0">
+                        <div class="card bg-white text-dark p-4 rounded-4 border-0 shadow-lg">
                             <div class="row g-4 text-start">
                                 <div class="col-md-4">
                                     <h5 class="fw-bold text-primary mb-3">Zone 1 (Free)</h5>
@@ -458,7 +474,7 @@
                             </div>
                             <hr>
                             <p class="mb-0 small text-muted">Don't see your location? <a href="get-info.html#contact"
-                                    class="fw-bold">Contact us</a> for a custom quote.</p>
+                                    class="text-primary fw-bold">Contact us</a> for a custom quote.</p>
                         </div>
                     </div>
                 </div>

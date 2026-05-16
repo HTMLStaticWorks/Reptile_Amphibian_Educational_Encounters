@@ -93,6 +93,8 @@
 }
 
 /* Invert text-dark and text-secondary if they're likely on a dark background */
+[data-bs-theme="dark"] .text-dark,
+[data-bs-theme="dark"] .text-secondary,
 [data-bs-theme="dark"] .bg-body .text-dark,
 [data-bs-theme="dark"] .bg-light .text-dark,
 [data-bs-theme="dark"] .bg-white .text-dark,
@@ -124,6 +126,10 @@
 /* Ensure text-white stays visible */
 [data-bs-theme="dark"] .text-white {
     color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .text-primary {
+    color: var(--primary-color) !important;
 }
 
 /* Footer high contrast in dark mode */
