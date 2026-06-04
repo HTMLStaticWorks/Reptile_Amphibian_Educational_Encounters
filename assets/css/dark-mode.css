@@ -143,3 +143,9 @@
 [data-bs-theme="dark"] #map iframe {
     filter: invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.1);
 }
+
+/* Fix mission profit card background for dark mode visibility */
+[data-bs-theme="dark"] .mission-profit-card {
+    background: rgba(30, 30, 30, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
