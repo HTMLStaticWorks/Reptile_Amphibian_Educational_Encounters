@@ -42,7 +42,6 @@ h6 {
     color: var(--primary-color);
     letter-spacing: -0.02em;
     text-align: center !important;
-    white-space: nowrap;
 }
 
 section,
@@ -875,7 +874,7 @@ footer .d-flex.gap-3 a:hover {
 /* --- Auth Pages Specific --- */
 .floating-controls {
     position: fixed;
-    top: 30px;
+    top: 15px;
     right: 30px;
     z-index: 1050;
     display: flex;
